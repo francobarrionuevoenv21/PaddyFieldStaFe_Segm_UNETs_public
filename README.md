@@ -8,6 +8,9 @@ This project corresponds to the final assignment for the Geo Data Scientist cour
 
 The project consists of training a Convolutional Neural Network to detect active/in-production paddy fields in a region in northern Santa Fe, Argentina. This area was originally characterized by wetlands, but in recent decades these natural ecosystems have been converted into paddy fields.
 
+![WhatsApp Image 2024-08-21 at 5 15 39 PM (3)](https://github.com/user-attachments/assets/585cfa62-7902-4bbe-9649-2984913d32cc)
+**Description**: UAV fly over the study area; **Credits**: Natalia Morandeira (@nmorandeira)
+
 The approach will involve training a basic [U-Net neural network](https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/) along with two variations. These variations will use different backbones and pretrained weights.
 
 ### Data
