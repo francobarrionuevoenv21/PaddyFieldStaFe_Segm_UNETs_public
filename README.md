@@ -30,11 +30,9 @@ The L8 images were obtained from the Google Earth Engine platform. To reduce fil
 
 | Model Name | IoU (Best) | Best Threshold | Precision | Recall |
 |------------|------------|----------------|-----------|--------|
-| Simple UNET  | 0.828      | 0.45           | 0.886     | 0.824   |
-|------------|------------|----------------|-----------|--------|
-| UNET + Backbone ResNet 34 (+ ImageNet pretrained weights) | 0.953      | 0.35           | 0.965     | 0.963   |
-|------------|------------|----------------|-----------|--------|
-| UNET + Backbone SEResNet 34 (+ ImageNet pretrained weights) | 0.964       | 0.30           | 0.974      | 0.971   |
+| Simple UNET | 0.828 | 0.45 | 0.886 | 0.824 |
+| UNET + Backbone ResNet34 (+ ImageNet pretrained weights) | 0.953 | 0.35 | 0.965 | 0.963 |
+| UNET + Backbone SEResNet34 (+ ImageNet pretrained weights) | 0.964 | 0.30 | 0.974 | 0.971 |
 
 
 **Keywords:** Deep learning, UNET, segmentation, paddy fields, remote sensing, GIS
