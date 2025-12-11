@@ -1,6 +1,6 @@
 ## UNETs implementation for paddy fields segmentation in Santa Fe (Argentina)
 
-This project corresponds to the final assignment for the Geo Data Scientist course provided by [Geodojo institute](https://www.geodojo.ai/geo-data-scientist) during 2025.
+This project corresponds to the final assignment for the Geo Data Scientist course provided by the [Geodojo institute](https://www.geodojo.ai/geo-data-scientist) during 2025.
 
 **Author:** Franco David Barrionuevo (@francobarrionuevoenv21)
 
