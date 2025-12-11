@@ -24,7 +24,18 @@ The L8 images were obtained from the Google Earth Engine platform. To reduce fil
 
 - **L8_data_chipping_v3.ipynb**: In this notebook, the processing of the L8 scenes is performed to prepare them as input for the CNN models. First, the NDVI index is computed. Then, the image and mask chips are generated. The ground truth for each year corresponds to a vector layer with clusters of paddy fields differentiated by active year, which was generated and validated as previous work.
 
-- **UNETs_training_paddyfieldsV2.ipynb**: In this notebook, three U-Nets variations to detect active/in-production paddy fields in the study area will be trained. For this purpose will be used the L8 data chips and its masks prepared before.
+- **UNETs_training_paddyfieldsV3.ipynb**: In this notebook, three U-Nets variations to detect active/in-production paddy fields in the study area will be trained. For this purpose will be used the L8 data chips and its masks prepared before.
+
+#### Summary models training results
+
+| Model Name | IoU (Best) | Best Threshold | Precision | Recall |
+|------------|------------|----------------|-----------|--------|
+| Simple UNET  | 0.828      | 0.45           | 0.886     | 0.824   |
+|------------|------------|----------------|-----------|--------|
+| UNET + Backbone ResNet 34 (+ ImageNet pretrained weights) | 0.953      | 0.35           | 0.965     | 0.963   |
+|------------|------------|----------------|-----------|--------|
+| UNET + Backbone SEResNet 34 (+ ImageNet pretrained weights) | 0.964       | 0.30           | 0.974      | 0.971   |
+
 
 **Keywords:** Deep learning, UNET, segmentation, paddy fields, remote sensing, GIS
 
