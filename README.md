@@ -4,9 +4,9 @@ This project corresponds to the final assignment for the Geo Data Scientist cour
 
 **Author:** Franco David Barrionuevo (@francobarrionuevoenv21)
 
-### About the project
+### About the Project
 
-The project consists of training a Convolutional Neural Network to detect active/in-production paddy fields in a region in northern Santa Fe, Argentina. This area was originally characterized by wetlands, but in recent decades these natural ecosystems have been converted into paddy fields.
+The project consisted in training a Convolutional Neural Network to detect active/in-production paddy fields in Santa Fe province, Argentina. This area was originally characterized by wetlands, but in recent decades these natural ecosystems have been converted into paddy fields.
 
 The approach will involve training a basic [U-Net neural network](https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/) along with two variations. These variations will use different backbones and pretrained weights.
 
@@ -33,6 +33,10 @@ The L8 images were obtained from the Google Earth Engine platform. To reduce fil
 | Simple UNET | 0.828 | 0.45 | 0.886 | 0.824 |
 | UNET + Backbone ResNet34 (+ ImageNet pretrained weights) | 0.953 | 0.35 | 0.965 | 0.963 |
 | UNET + Backbone SEResNet34 (+ ImageNet pretrained weights) | 0.964 | 0.30 | 0.974 | 0.971 |
+
+- **BestUNET_predictV1.ipynb**: In this notebook, the best trained model is used to segmentate by predicting and identify paddy fields in the study area. The model with the best performance of the three variations was the UNET + Backbone SEResnet 34 with Imagenet pretrained weights.
+
+- **BestUNET_preds_evalV2.ipynb**: The best UNET trained model (UNET + SEResNet 34) predictions are evaluated by comparing the results with validated data. Additionally, are assesed the predictions for years in which there were no previously data: 2023, 2024, 2025. According to the obtained results, are proposed strategies to improve them in future stages.
 
 
 **Keywords:** Deep learning, UNET, segmentation, paddy fields, remote sensing, GIS
